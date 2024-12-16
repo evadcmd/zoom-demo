@@ -1,5 +1,7 @@
 # zoom-demo
 
+A python fast-api version of https://github.com/zoom/zoom-oauth-sample-app
+
 ## Create an OAuth App on the Zoom App Marketplace
 
 Sign in to the Zoom App Marketplace and [Create an OAuth App](https://marketplace.zoom.us/develop/create?source=devdocs).
@@ -36,9 +38,16 @@ The following OAuth scopes are necessary to create a meeting:
    • Description: Allows the application to create, update, and delete meetings for any user in the account.
    • Scope Type: Account-level; requires admin privileges.
 
+## Run this App
+
+install rye
+
+```
+brew install rye
+```
+
 ```
 rye run dev
-rye run test
 ```
 
 References:
