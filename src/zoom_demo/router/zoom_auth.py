@@ -24,6 +24,6 @@ async def zoom_auth(code: str | None = None):
             url=f"{zoom.OAUTH_URL}?{urlencode({
             "response_type": "code",
             "client_id": secret.client_id,
-            "redirect_uri": secret.redirect_url
+            "redirect_uri": secret.redirect_uri
         })}"
         )

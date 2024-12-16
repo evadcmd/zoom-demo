@@ -9,7 +9,7 @@ create a .env file with the following info
 ```
 client_id=${client_id}
 client_secret=${client_secret}
-redirect_url=${redirect_url}
+redirect_uri=${redirect_uri}
 ```
 
 rye run dev

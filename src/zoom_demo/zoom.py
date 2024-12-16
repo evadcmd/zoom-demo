@@ -22,7 +22,7 @@ async def get_access_token(code: str) -> Token:
     payload = {
         "code": code,
         "grant_type": "authorization_code",
-        "redirect_uri": secret.redirect_url,
+        "redirect_uri": secret.redirect_uri,
     }
     credentials = f"{secret.client_id}:{secret.client_secret}"
     base64_credentials = base64.b64encode(credentials.encode()).decode()
