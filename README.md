@@ -46,11 +46,14 @@ install rye
 brew install rye
 ```
 
+run server
+
 ```
 rye run dev
 ```
 
 References:
+
 https://developers.zoom.us/docs/api/using-zoom-apis/
 
 https://developers.zoom.us/docs/integrations/oauth/
