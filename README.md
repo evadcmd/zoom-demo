@@ -1,16 +1,47 @@
 # zoom-demo
 
+## Create an OAuth App on the Zoom App Marketplace
+
+Sign in to the Zoom App Marketplace and [Create an OAuth App](https://marketplace.zoom.us/develop/create?source=devdocs).
+
+Creating this app will generate your OAuth Client ID and Secret needed to install on your account and get an access token.
+
+Copy these credentials and add them to your `.env` file at root folder.
+
+Example:
+
+```
+client_id=1234567890
+client_secret=13245678901234567890
+redirect_uri=https://12345678.ngrok.io
+```
+
+### ngrok
+
+You may need to publish your app so you could get the redirect_uri for local testing
+
+https://zenn.dev/manase/articles/03df0e18c93755
+
+### Add Scopes
+
+Required Permissions (Scopes)
+
+The following OAuth scopes are necessary to create a meeting:
+
+1. meeting:write
+   • Description: Allows the application to create, update, and delete meetings for the authenticated user.
+   • Scope Type: User-level or account-level.
+
+2. meeting:write:admin
+   • Description: Allows the application to create, update, and delete meetings for any user in the account.
+   • Scope Type: Account-level; requires admin privileges.
+
+```
+rye run dev
+rye run test
+```
+
+References:
 https://developers.zoom.us/docs/api/using-zoom-apis/
 
 https://developers.zoom.us/docs/integrations/oauth/
-
-create a .env file with the following info
-
-```
-client_id=${client_id}
-client_secret=${client_secret}
-redirect_uri=${redirect_uri}
-```
-
-rye run dev
-rye run test
