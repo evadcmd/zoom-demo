@@ -1,9 +1,10 @@
-from fastapi import APIRouter
-from zoom_demo.conf import secret
-from zoom_demo import zoom
-from fastapi.responses import RedirectResponse
 from urllib.parse import urlencode
 
+from fastapi import APIRouter
+from fastapi.responses import RedirectResponse
+
+from zoom_demo import zoom
+from zoom_demo.conf import secret
 
 router = APIRouter(prefix="/zoom-auth", tags=["zoom-auth"])
 

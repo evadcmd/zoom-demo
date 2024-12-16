@@ -1,8 +1,9 @@
 import base64
-from zoom_demo.conf import secret
-from zoom_demo import http
+
 from pydantic import BaseModel
 
+from zoom_demo import http
+from zoom_demo.conf import secret
 
 OAUTH_URL = "https://zoom.us/oauth/authorize"
 TOKEN_URL = "https://zoom.us/oauth/token"

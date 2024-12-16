@@ -1,5 +1,6 @@
-import aiohttp
 import logging
+
+import aiohttp
 
 logging.basicConfig(level=logging.DEBUG)
 # TODO: find out why it does not work
