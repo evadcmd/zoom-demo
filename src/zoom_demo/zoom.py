@@ -82,6 +82,7 @@ class Settings(BaseModel):
     email_in_attendee_report: bool
 
 
+# https://developers.zoom.us/docs/api/rest/reference/zoom-api/methods/#operation/meetingCreate
 class ZoomMeeting(BaseModel):
     uuid: str
     id: int
