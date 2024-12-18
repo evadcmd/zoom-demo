@@ -1,4 +1,5 @@
 import base64
+from typing import Any
 
 from pydantic import BaseModel
 
@@ -69,12 +70,12 @@ class Settings(BaseModel):
     continuous_meeting_chat: dict
     participant_focused_meeting: bool
     push_change_to_calendar: bool
-    resources: list[any]
+    resources: list[Any]
     alternative_hosts_email_notification: bool
     show_join_info: bool
     device_testing: bool
     focus_mode: bool
-    meeting_invitees: list[any]
+    meeting_invitees: list[Any]
     private_meeting: bool
     email_notification: bool
     host_save_video_order: bool
