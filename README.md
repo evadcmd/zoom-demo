@@ -40,16 +40,20 @@ The following OAuth scopes are necessary to create a meeting:
 
 ## Run this App
 
-install rye
+install uv just
 
 ```
-brew install rye
+brew install uv just
+```
+
+```
+uv sync
 ```
 
 run server
 
 ```
-rye run dev
+just dev
 ```
 
 References:
